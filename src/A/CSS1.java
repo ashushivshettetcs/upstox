@@ -9,6 +9,7 @@ public class CSS1 {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\Ashwini Shivshette\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		//open the application
+		driver.get("https://demo.actitime.com");
 		driver.get("https://demo.actitime.com/login.do");
 		//enter un
 		driver.findElement(By.cssSelector("input[id='username']")).sendKeys("admin");
